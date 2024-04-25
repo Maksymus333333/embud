@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import '../Home_Page/Home.css';
+import './Home.css';
 import { FaLeaf, FaTrophy, FaLightbulb } from 'react-icons/fa';
 import { RxArrowTopRight } from 'react-icons/rx';
 import { HashLink as Link } from 'react-router-hash-link';
-import img1 from '..//..//assets/serv_home.jpg';
-import img2 from '..//..//assets/kalk.jpg';
-import img3 from '..//..//assets/key_ph.jpg';
-import jsw from '..//..//assets/1+1.png';
-import SK from '..//..//assets/kovalska.png';
-import ct from '..//..//assets/city.jpg';
-import logo from '..//..//assets/embud_logo.png';
-import TMT from '..//..//assets/Business.png';
-import ts from '..//..//assets/kan.jpg';
-import kw from '..//..//assets/kiywst.png';
-import med from '..//..//assets/med.png';
-import sg from '..//..//assets/sg.png';
-import ak from '..//..//assets/ak.png';
+import img1 from '../../assets/serv_home.jpg';
+import img2 from '../../assets/kalk.jpg';
+import img3 from '../../assets/key_ph.jpg';
+import jsw from '../../assets/1+1.png';
+import SK from '../../assets/kovalska.png';
+import ct from '../../assets/city.jpg';
+import logo from '../../assets/embud_logo.png';
+import TMT from '../../assets/Business.png';
+import ts from '../../assets/kan.jpg';
+import kw from '../../assets/kiywst.png';
+import med from '../../assets/med.png';
+import sg from '../../assets/sg.png';
+import ak from '../../assets/ak.png';
  
 
 const data = [

@@ -1,9 +1,9 @@
 import React from 'react';
-import company1 from '..//..//assets/nophoto.jpg';
-import company2 from '..//..//assets/nophoto.jpg';
-import abp from '..//..//assets/nophoto.jpg';
+import company1 from '../../assets/nophoto.jpg';
+import company2 from '../../assets/nophoto.jpg';
+import abp from '../../assets/nophoto.jpg';
 
-import '../About/About.css';
+import './About.css';
 import { FaHandsHelping } from 'react-icons/fa';
 import { TbTargetArrow } from 'react-icons/tb';
 import { AiOutlineEye } from 'react-icons/ai';

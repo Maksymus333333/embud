@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import contactImg from '..//..//assets/contact.png';
-import '../Contact/Contact.css';
+import contactImg from '../../assets/contact.png';
+import './Contact.css';
 import { FaEnvelope, FaPhoneAlt, FaClock } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Whatsapp/whatsapp.css';
+import './whatsapp.css';
 import { MdOutlineWhatsapp } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 // import { AiOutlineArrowUp } from 'react-icons/ai';

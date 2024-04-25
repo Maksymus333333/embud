@@ -15,7 +15,7 @@ import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import Logo from '../../assets/embud_logo.png';
-import '../Footer/Footer.css';
+import './Footer.css';
 
 function Footer() {
   const location = useLocation();

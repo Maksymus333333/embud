@@ -9,14 +9,14 @@ import Contact from './Pages/Contact/Contact';
 import ProjectDetails from './Pages/Projects_Page/ProjectDetails';
 
   // import Team from './Pages/Team/Team';
-import ScrollToTop from '../src/Components/ScrollToTop';
-import Footer from '../src/Components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop';
+import Footer from './Components/Footer/Footer';
 import Whatsapp from './Components/Whatsapp/Whatsapp';
 import Projects from './Pages/Projects_Page/Projects';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Admin from './adminPage/Admin';
-import Loader from '../src/Pages/Loader/Loader';
+import Loader from './Pages/Loader/Loader';
 import { useEffect, useState } from 'react';
 
 AOS.init(); // Initialize AOS

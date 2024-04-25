@@ -1,11 +1,11 @@
-import Road1 from '..//..//assets/warszawa1.jpg';
+import Road1 from '../../assets/warszawa1.jpg';
  
 
-import wareHouse1 from '..//..//assets/tetris.jpg';
+import wareHouse1 from '../../assets/tetris.jpg';
  
 
 
-import torcen1 from '..//..//assets/torcen1.jpg';
+import torcen1 from '../../assets/torcen1.jpg';
 
 const projectsData = [
   {

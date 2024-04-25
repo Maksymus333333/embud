@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '..//..//assets/embud_logoV2.jpg';
-import LogoRound from '..//..//assets/embud_logo.png';
+import Logo from '../../assets/embud_logoV2.jpg';
+import LogoRound from '../../assets/embud_logo.png';
 
-import '../Navbar/Navbar.css';
+import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavbarContainer = styled.section``;
