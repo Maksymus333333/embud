@@ -5,9 +5,9 @@ import '../Contact/Contact.css';
 import { FaEnvelope, FaPhoneAlt, FaClock } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
-const SERVICE_ID = 'service_max123'; // Замініть на ID вашого сервісу з EmailJS
-const TEMPLATE_ID = 'template_4z902uk'; // Замініть на ID вашого шаблону з EmailJS
-const USER_ID = 'NSp5LSumUOF3aT0P5'; // Замініть на ваш User ID з EmailJS
+const SERVICE_ID = 'service_max123';
+const TEMPLATE_ID = 'template_4z902uk';
+const USER_ID = 'NSp5LSumUOF3aT0P5';
 
 const MapContainer = styled.li`
   @media (max-width: 538px) {
@@ -54,13 +54,14 @@ function Contact() {
   };
 
   const isValidName = (name) => {
-    return /^[a-zA-Z\s-]+$/.test(name);
+    return /^[A-Za-zА-Яа-яЁё\s-]+$/.test(name);
   };
-
+  
   const isValidNumber = (number) => {
     if (number === undefined) {
       return false;
     }
+     
     return /^[+]?\d+$/.test(number) && number.length === 10;
   };
 
@@ -102,15 +103,14 @@ function Contact() {
       <div className='position-relative serivesBgImg '>
         <div className='service-img-overlay d-flex justify-content-center align-items-center'>
           <h1 className='text-light text-center products-main-title'>
-          Зв'яжіться з нами
+            Зв'яжіться з нами
           </h1>
         </div>
       </div>
       <div className='text-center mt-5'>
         <h2 className='contact-main-text'>Зв'яжіться з нами вже сьогодні!</h2>
         <p className='mt-5 px-4'>
-        Готові розпочати свій наступний проект? Зв'яжіться з нами сьогодні і давайте
-          будувати майбутнє разом.
+          Готові розпочати свій наступний проєкт? Зв'яжіться з нами сьогодні! Побудуймо майбутнє разом.
         </p>
       </div>
       <div className='container mt-sm-5 px-sm-0 px-4 mt-3 d-flex justify-content-md-center'>
@@ -130,7 +130,7 @@ function Contact() {
           <form
             onSubmit={handleSubmit}
             className='col-md-6 col-12'
-            autoComplete='off'
+            autoComplete='on'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
@@ -147,50 +147,62 @@ function Contact() {
                 type='text'
                 value={formData.name}
                 name='name'
+                id='name'
                 placeholder="Введіть ім'я та прізвище"
                 onChange={handleChange}
+                pattern="[A-Za-zА-Яа-яЁё\s-]*"
+                title="Можна ввести тільки літери"
+                autoComplete='name'
+                required
               />
               {errors.name && <span className='error'>{errors.name}</span>}
             </div>
             <div>
               <label className='mt-2 fw-bold' htmlFor='email'>
-              Електронна пошта
+                Електронна пошта
               </label>
               <InputBox
                 className='input-box w-100 mt-2 card px-3 py-2'
                 type='email'
                 name='email'
+                id='email'
                 value={formData.email}
                 placeholder='Введіть свою електронну адресу'
                 onChange={handleChange}
+                autoComplete='email'
               />
             </div>
             <div>
               <label className='mt-2 fw-bold' htmlFor='number'>
-              Номер <span style={{ color: 'red' }}>*</span>
+                Номер <span style={{ color: 'red' }}>*</span>
               </label>
               <InputBox
                 className='input-box w-100 mt-2 card px-3 py-2'
                 type='number'
                 value={formData.number}
                 name='number'
+                id='number'
                 placeholder='Введіть свій номер телефону'
                 onChange={handleChange}
+                autoComplete='tel'
+                required
               />
               {errors.number && <span className='error'>{errors.number}</span>}
             </div>
             <div>
               <label className=' mt-2 fw-bold' htmlFor='message'>
-              Повідомлення
+                Повідомлення
               </label>
               <TextMessageBox
                 className='input-box w-100 mt-2 card px-3 py-2'
                 type='text'
                 name='message'
+                id='message'
                 value={formData.message}
                 placeholder='Введіть своє повідомлення'
                 rows='5'
                 onChange={handleChange}
+                autoComplete='off'
               />
             </div>
             <div className='d-flex'>
@@ -240,7 +252,7 @@ function Contact() {
                     href='mailto:maxik.dach212121@gmail.com'
                     title='Drop a message'
                   >
-                    embud@gmail.com
+                    office@embud.com.ua
                   </a>
                 </p>
               </div>
@@ -266,7 +278,7 @@ function Contact() {
                     title='Call Us'
                     href='tel:+919611782840'
                   >
-                    +380 99 135 24 85
+                    +380 44 228 22 58
                   </a>
                 </p>
               </div>

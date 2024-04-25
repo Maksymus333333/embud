@@ -35,31 +35,33 @@ function Services() {
         <h2 className='text-center comprehensive-service-text d-lg-block d-none'>
         Наш комплексний спектр послуг
         </h2>
-        <div className='comprehensive-service-box d-lg-block d-none'>
+        {/* <div className='comprehensive-service-box d-lg-block d-none'>
           <div className='row text-center d-flex justify-content-around align-items-center'>
+
+
+            <div
+              className='col-md-3  col-12 py-5 mt-md-5 mt-3  bg-dark text-light'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
+              <h4>Планування</h4>
+            </div>
             <div
               className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
-              <h4>Планування та проектування</h4>
-            </div>
-            <div
-              className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'
-              data-aos='fade-up'
-              data-aos-duration='1100'
-            >
               <h4>Оцінка та калькуляція витрат</h4>
             </div>
             <div
-              className='col-md-3  col-12 py-5 mt-md-0 mt-3  bg-dark text-light'
+              className='col-md-3  col-12 py-5 mt-md-5 mt-3  bg-dark text-light'
               data-aos='fade-up'
-              data-aos-duration='1300'
+              data-aos-duration='1000'
             >
-              <h4>Проекти під ключ</h4>
+              <h4>Проекти    під    ключ </h4>
             </div>
-          </div>
-          <div className='row text-center d-flex justify-content-around align-items-center '>
+             </div>
+             <div className='row text-center d-flex justify-content-around align-items-center '>
             <div
               className='col-md-5 col-12 py-5 mt-md-0 mt-3 bg-dark text-light'
               data-aos='fade-up'
@@ -76,7 +78,7 @@ function Services() {
               <h4>Будівельні матеріали</h4>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='bg-light p-md-5 p-2 container mt-sm-5 mt-0'>
         <div className='mt-2'>
@@ -124,9 +126,8 @@ function Services() {
                     Концептуалізація
                     </h4>
                     <p className='text-center'>
-                    Підготовка починається з розуміння суті вашого проекту
-                      суті вашого проекту. Ми співпрацюємо, щоб виявити основні цілі, унікальні
-                      елементів.
+                    Підготовка починається з розуміння суті вашого проєкту.
+                     Ми співпрацюємо, щоб виявити основні цілі та додати унікальні елементи.
                     </p>
                   </div>
                 </div>
@@ -143,9 +144,7 @@ function Services() {
                     Розробка стратегії
                     </h4>
                     <p className='text-center'>
-                    Ретельне планування планує кожен крок, передбачаючи
-                      виклики, використовуючи можливості, спрямовуючи задум до
-                      до успіху.
+                    Ретельне планування, передбачення викликів, спрямовуючи задум до успіху.
                     </p>
                   </div>
                 </div>
@@ -162,8 +161,7 @@ function Services() {
                     Хронологія та планування
                     </h4>
                     <p className='text-center'>
-                    Ми цінуємо сутність часу, створюючи точну хореографію для
-                      постійного прогресу, гарантуючи, що імпульс ніколи не збавляє обертів
+                    Ми цінуємо час, створюючи точний таймінг для постійного прогресу.
                     </p>
                   </div>
                 </div>
@@ -205,9 +203,8 @@ function Services() {
               >
                 <h2 className='service-main-text'>Оцінка та калькуляція витрат</h2>
                 <p className=''>
-                Прозорість і точність мають першорядне значення. Передові методи
-                  дають детальні оцінки та розбивку, забезпечуючи чітке
-                  фінансове розуміння для прийняття обґрунтованих рішень.
+                Прозорість і точність мають першочергове значення.
+                 Передові методи дають детальні оцінки та розбивку, забезпечуючи чітке фінансове розуміння.
                 </p>
               </div>
               <div className='col-md-5 col-12'>
@@ -236,8 +233,7 @@ function Services() {
                     <div className='mt-2'>
                       <p>
                       Галузева інформація, передові інструменти. Наші точні прогнози вартості
-                        дозволяють приймати обґрунтовані рішення та ефективно розподіляти ресурси.
-                        розподіл ресурсів
+                        дозволяють приймати обґрунтовані рішення та ефективно розподіляти ресурси. 
                       </p>
                     </div>
                   </div>
@@ -280,8 +276,7 @@ function Services() {
                     </div>
                     <div className='mt-2'>
                       <p>
-                      Комплексні гарантії для стійкості та бюджету
-                        захист від несподіваних викликів.
+                      Комплексні гарантії для стійкості та захисту бюджету від несподіваних викликів.
                       </p>
                     </div>
                   </div>
@@ -302,8 +297,7 @@ function Services() {
                     </div>
                     <div className='mt-2'>
                       <p>
-                      Наші експерти оптимізують ресурси, забезпечуючи якість та
-                        досконалість, забезпечуючи при цьому бюджетну ефективність.
+                      Наші експерти оптимізують ресурси, забезпечуючи якість, досконалість та бюджетну ефективність.
                       </p>
                     </div>
                   </div>
@@ -324,11 +318,11 @@ function Services() {
                 data-aos='fade-up'
                 data-aos-duration='1000'
               >
-                <h2 className='service-main-text'>Проекти під ключ</h2>
+                <h2 className='service-main-text'>Проєкти під ключ</h2>
                 <p>
-                Наші рішення охоплюють проектування від початку до завершення,
-                  закупівлю, будівництво та передачу. Ми беремо все на себе, тож
-                  ви можете зосередитися на своїй основній діяльності.
+                Наші рішення охоплюють проєктування від початку до завершення. 
+                Закупівля, будівництво та передача - ми беремо все на себе, 
+                тож ви можете зосередитися на своїй основній діяльності.
                 </p>
               </div>
               <div className='col-md-5 col-12'>
@@ -375,8 +369,7 @@ function Services() {
                     </div>
                     <div className='mt-2'>
                       <p>
-                      Креативні та ефективні дизайнерські рішення, адаптовані до ваших
-                        потребам.
+                      Креативні та ефективні дизайнерські рішення, адаптовані до ваших потреб.
                       </p>
                     </div>
                   </div>

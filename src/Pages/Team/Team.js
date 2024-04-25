@@ -1,21 +1,21 @@
 // import React from 'react';
-// import img1 from '..//..//assets/abhi.jpg';
-// import img2 from '..//..//assets/vinay.jpg';
+//  import img1 from '../../assets/nophoto.jpg';
+//  import img2 from '../../assets/nophoto.jpg';
 // import '../Team/Team.css';
 // function Profile() {
 //   const teamMembers = [
 //     {
 //       id: 1,
-//       name: 'ABHILASH N B',
-//       jobTitle: 'Chief executive officer',
-//       bio: 'Abhilash has over 10 years of experience in managing construction projects',
+//       name: 'name',
+//       jobTitle: 'jobTitle',
+//       bio: 'bio',
 //       imageUrl: `${img1}`,
 //     },
 //     {
 //       id: 2,
-//       name: 'Vinay Gowda',
-//       jobTitle: 'Civil Engineer',
-//       bio: 'Viany is an expert in manufacturing processes and has worked on several projects',
+//       name: 'name',
+//       jobTitle: 'jobTitle',
+//       bio: 'bio',
 //       imageUrl: `${img2}`,
 //     },
 //   ];

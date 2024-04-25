@@ -1,5 +1,8 @@
+// Admin.js
+
 import React, { useState } from 'react';
 import axios from 'axios';
+import { fetchProjects } from './api'; // Імпортуємо функцію fetchProjects з файлу api.js
 
 import {
   Button,
@@ -17,7 +20,7 @@ function Admin() {
     description: '',
     startDate: '',
     endDate: '',
-    images: [], // Assuming an array of images for each project
+    images: [],
   });
 
   const handleInputChange = (event) => {
@@ -31,39 +34,33 @@ function Admin() {
   };
 
   const handleImageChange = (event) => {
-    // Assuming multiple files can be selected
     const files = event.target.files;
     setNewProject({ ...newProject, images: Array.from(files) });
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
-    // Check if all required fields are filled
     if (
       newProject.title &&
       newProject.description &&
       newProject.startDate &&
       newProject.endDate &&
-      Array.isArray(newProject.images) && // Add this condition to ensure images is an array
+      Array.isArray(newProject.images) &&
       newProject.images.length > 0
     ) {
       try {
-        // Create a FormData object to send multipart/form-data
         const formData = new FormData();
         formData.append('title', newProject.title);
         formData.append('description', newProject.description);
         formData.append('startDate', newProject.startDate);
         formData.append('endDate', newProject.endDate);
-
-        // Append each image file to the FormData
         newProject.images.forEach((image) => {
           formData.append('images', image);
         });
 
-        // Send POST request to the backend
         const response = await axios.post(
-          'http://localhost:5001/api/admin/projects',
+          'http://localhost:5001/projects',
           formData,
           {
             headers: {
@@ -72,25 +69,24 @@ function Admin() {
           }
         );
 
-        // Log the response from the backend
         console.log(response.data);
 
-        // Reset form fields after successful submission
-        setNewProject({
-          title: '',
-          description: '',
-          startDate: '',
-          endDate: '',
-          images: [],
-        });
+        updateProjectsList(); 
       } catch (error) {
-        // Handle errors from the backend
         console.error('Error submitting form:', error);
-        // You may want to display an error message to the user here
       }
     } else {
-      // If any required field is missing, display an error message
       alert('Please fill in all required fields.');
+    }
+  };
+
+  const updateProjectsList = async () => {
+    try {
+      const response = await fetchProjects(); // Викликаємо функцію fetchProjects, яка виконує запит GET на сервер
+      const projects = response.data; // Припустимо, що сервер повертає масив об'єктів проектів
+      console.log('Projects list updated:', projects);
+    } catch (error) {
+      console.error('Error updating projects list:', error);
     }
   };
 

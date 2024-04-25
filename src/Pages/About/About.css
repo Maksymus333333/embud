@@ -6,7 +6,7 @@
     overflow-x:hidden !important;
 }
 .serivesBgImg{
-    background-image: url('..//..//assets/pic.jpg');
+    background-image: url('..//..//assets/city_light.jpg');
     background-position:left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,8 +22,27 @@
     position: relative;
     color: #0b0757;
 }
+
+.about-main-text2{
+    font-size: 40px;
+    position: relative;
+    color: #0b0757;
+}
     
 .about-main-text::before {
+    content: '';
+        width: 200px;
+        height: 5px;
+        position: absolute;
+        left: 50%; 
+        transform: translateX(-50%); 
+        background: linear-gradient(99deg, #5338FF 0%, #FFC465 100%);
+        border-radius: 5px;
+        bottom: -10px;
+        z-index: -1;   
+}
+
+.about-main-text2::before{
     content: '';
     width: 200px;
     height: 5px;
@@ -33,6 +52,7 @@
     bottom: -10px;
     z-index: -1; 
 }
+
 
 .number{
     font-size: 30px;
