@@ -95,17 +95,29 @@
         height: auto;
     }
 }
-@media (max-width:450px) {
+@media (max-width:991px) {
     .about-main-text{ 
-        font-size: 25px;
+        font-size: 40px;
         position: relative;
         color: #0b0757;
-        text-align: center !important;
+        text-align: left !important;
     }
     .about-main-text::before{
         width: 100px;
         height: 3px;
     }
+
+    .about-main-text2{ 
+        font-size: 40px;
+        position: relative;
+        color: #0b0757;
+        text-align: left !important;
+    }
+    .about-main-text2::before{
+        width: 100px;
+        height: 3px;
+    }
+
     .about-shadow{
         box-shadow: none;
         border-radius: 5px;
@@ -122,13 +134,13 @@
         border-bottom: 5px solid white;
     }
     .paragraphs{
-        text-align: center !important;
+        text-align: left !important;
         word-break: break-word;
         letter-spacing: -0.2px;
     }
 }
 
-@media (max-width:368px) {
+@media (max-width:450px) {
     .about-main-text{ 
         font-size: 30px;
         position: relative;
@@ -174,6 +186,21 @@
         word-break: break-word;
         letter-spacing: -0.2px;
     }
+
+
+    .logos {
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+        white-space: nowrap; /* Prevent wrapping */
+        padding: 20px 0; /* Adjust padding for better spacing */
+      }
+      
+      .logos-slide {
+        display: inline-block; /* Ensure each slide stays in one line */
+      }
+      
+      .logos-slide img {
+        margin-right: 10px; /* Add space between logos */
+      }
 }
 
 

@@ -5,7 +5,7 @@ import wareHouse1 from '../../assets/tetris.jpg';
  
 
 
-import torcen1 from '../../assets/torcen1.jpg';
+import torcen1 from '../../assets/torcen1.jpg'; 
 
 const projectsData = [
   {
@@ -18,6 +18,7 @@ const projectsData = [
     startDate: '10-05-2022',
     endDate: '30-09-2022',
     image: [Road1],
+    
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ const projectsData = [
     startDate: '10-05-2022',
     endDate: '30-09-2022',
     image: [wareHouse1],
+ 
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ const projectsData = [
     startDate: '10-05-2022',
     endDate: '30-09-2022',
     image: [torcen1],
+    
   },
 ];
 

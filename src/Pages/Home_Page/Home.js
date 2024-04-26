@@ -6,6 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import img1 from '../../assets/serv_home.jpg';
 import img2 from '../../assets/kalk.jpg';
 import img3 from '../../assets/key_ph.jpg';
+
 import jsw from '../../assets/1+1.png';
 import SK from '../../assets/kovalska.png';
 import ct from '../../assets/city.jpg';
@@ -161,28 +162,30 @@ function Home() {
       <img loading='lazy' src={SK} alt='' />
       <img loading='lazy' src={kw} alt='' />
       <img loading='lazy' src={ts} alt='' />
+      <img loading='lazy' src={ak} alt='' style={{ height: '80px', width: '80px' }} />
+      <img loading='lazy' src={sg} alt='' style={{ height: '60px', width: '180px' }}/>
       <img loading='lazy' src={med} alt=''style={{ height: '80px', width: '120px' }} />
       <img loading='lazy'   src={ct} alt='' style={{ height: '80px', width: '120px' }} />
       <img loading='lazy' src={jsw} alt='' />
       <img loading='lazy' src={TMT} alt='' style={{ height: '80px', width: '80px' }} />
       <img loading='lazy' src={SK} alt='' />
-      <img loading='lazy' src={ak} alt='' style={{ height: '80px', width: '80px' }} />
       <img loading='lazy' src={kw} alt='' />
       <img loading='lazy'   src={ct} alt='' style={{ height: '80px', width: '120px' }} />
       <img loading='lazy' src={med} alt=''style={{ height: '80px', width: '120px' }} /> 
      </div>
      <div className='logos-slide'>
+     <img loading='lazy' src={ak} alt='' style={{ height: '80px', width: '80px' }} />
+     <img loading='lazy' src={kw} alt='' />
      <img loading='lazy' src={jsw} alt='' />
      <img loading='lazy' src={sg} alt='' style={{ height: '60px', width: '180px' }}/>
       <img loading='lazy' src={SK} alt='' />
-      <img loading='lazy' src={kw} alt='' />
+      <img loading='lazy' src={TMT} alt='' style={{ height: '80px', width: '80px' }} />
       <img loading='lazy' src={med} alt=''style={{ height: '80px', width: '120px' }} />
       <img loading='lazy' src={ts} alt='' />
       <img loading='lazy'   src={ct} alt='' style={{ height: '80px', width: '120px' }} />
       <img loading='lazy' src={jsw} alt='' />
       <img loading='lazy' src={SK} alt='' />
-      <img loading='lazy' src={kw} alt='' />
-      <img loading='lazy' src={TMT} alt='' />
+      <img loading='lazy' src={kw} alt='' /> 
       <img loading='lazy'  src={ct} alt='' style={{ height: '80px', width: '100px' }} />
     </div>
   </div>

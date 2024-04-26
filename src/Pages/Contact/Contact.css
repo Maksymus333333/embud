@@ -59,10 +59,11 @@ color: #0b0757;
 }
 @media (max-width:450px) {
     .contact-main-text{
-        font-size: 22px;
+        font-size: 20px;
         position: relative;
         color: #0b0757;
         padding:0px 10px;
+        font-weight: bold; /* Make the font bold */
     }
     .contact-box{
         box-shadow: none;

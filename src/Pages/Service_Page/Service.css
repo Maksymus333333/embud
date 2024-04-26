@@ -100,7 +100,7 @@
       }
 }
 
-@media (max-width:368px) {
+@media (max-width:400px) {
     .comprehensive-service-text{
         display: none;
         
@@ -125,7 +125,7 @@
         font-size: 20px; 
         font-weight: bold; /* Make the font bold */
       }
-
+   
       .estimation-costing-sub-title{
         font-size: 18px;
         color: #0b0757;
