@@ -3,6 +3,18 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+.home-button {
+    display: flex; /* Використовуємо flexbox */
+    justify-content: center; /* Вирівнюємо по центру по горизонталі */
+    margin-top: 20px; /* Встановлюємо відступ зверху для кнопок */
+    
+  }
+  .home-button a {
+    margin: 0 10px; /* Задаємо відступ між кнопками */
+    
+  }
+
 .home-container{
     background: linear-gradient(0deg,#addbf2 0%,#9e89c5a6 100%) 0% 0% no-repeat padding-box;
     overflow-x:hidden !important;
@@ -47,11 +59,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center ;
     align-items: left;
     color: white !important;
     background-image: url('..//..//assets/logo_lamp.jpg');
-    background-position: center;
+    background-position: center  ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -96,7 +108,7 @@
         font-size: 18px;
     }
     .explore-link {
-        padding: 6px 12px;
+        padding: 7.1px 12px;
         font-size: 1rem;
         color: #fff;
         text-decoration: none;
@@ -255,24 +267,24 @@
             flex-direction:column-reverse;
         }
     }
-    @media (max-width:700px) {
+    @media (max-width:768px) {
         .service-img{
             width: 100%;
             height: 350px !important;
         }
         .company-home-title{
             font-size: 50px;
-            text-align: left;
+            text-align: center;
             line-height: 60px;
         }
         .company-home-title2{
             font-size: 50px;
-            text-align: left;
+            text-align: center;
             line-height: 60px;
         }
         .home-sub-text{
             font-size: 18px;
-            text-align: left;
+            text-align: center;
         }
         .home-button{
             text-align: left;
@@ -308,6 +320,115 @@
             color: white;
         }
     }
+
+    @media (max-width:700px) {
+        .service-img{
+            width: 100%;
+            height: 350px !important;
+        }
+        .company-home-title{
+            font-size: 50px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .company-home-title2{
+            font-size: 50px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .home-sub-text{
+            font-size: 18px;
+            text-align: center;
+        }
+        .home-button{
+            text-align: left;
+        }
+        .service-container{
+            position: relative;
+            margin-top: 100px;
+        }
+        .container-box{
+            border-radius: 10px;
+            cursor: pointer;
+            border:1px solid #8cc5e2;
+            box-shadow: 0 0 89px 1px rgb(252, 251, 251);
+            transform: scale(0.9);
+          }.next-btn{
+            position: absolute;
+            top: 80%;
+            right:30%;
+            border: 0px;
+            background-color: transparent !important;
+            font-size: 25px;
+            border-radius: 50%;
+            color: white;
+        }
+        .prev-btn{
+            position: absolute;
+            top: 80%;
+            left: 30%;
+            border: 0px;
+            border-radius: 50%;
+            background-color: transparent !important;
+            font-size: 25px;
+            color: white;
+        }
+    }
+
+    @media (max-width:550px) {
+        .service-img{
+            width: 100%;
+            height: 350px !important;
+        }
+        .company-home-title{
+            font-size: 40px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .company-home-title2{
+            font-size: 40px;
+            text-align: center;
+            line-height: 60px;
+        }
+        .home-sub-text{
+            font-size: 18px;
+            text-align: center;
+        }
+        .home-button{
+            text-align: left;
+        }
+        .service-container{
+            position: relative;
+            margin-top: 100px;
+        }
+        .container-box{
+            border-radius: 10px;
+            cursor: pointer;
+            border:1px solid #8cc5e2;
+            box-shadow: 0 0 89px 1px rgb(252, 251, 251);
+            transform: scale(0.9);
+          }.next-btn{
+            position: absolute;
+            top: 80%;
+            right:30%;
+            border: 0px;
+            background-color: transparent !important;
+            font-size: 25px;
+            border-radius: 50%;
+            color: white;
+        }
+        .prev-btn{
+            position: absolute;
+            top: 80%;
+            left: 30%;
+            border: 0px;
+            border-radius: 50%;
+            background-color: transparent !important;
+            font-size: 25px;
+            color: white;
+        }
+    }
+
     @media (max-width:450px) {
         .service-container{
             position: relative;
@@ -351,11 +472,104 @@
             background: transparent linear-gradient(143deg,#e2f8ff,#e2f8ff) 0 0 no-repeat padding-box;
         }
         .home-button{
-            text-align: left;
+            text-align: center;
 
         }
 
     }
+
+    @media (max-width: 420px) {
+        .home-main-container {
+          letter-spacing: 2px;
+          width: 100%;
+          height: 75vh;
+          margin-top: 50px;
+        }
+      
+        .company-home-title,
+        .company-home-title2 {
+          font-size: 32px;
+          text-align: center;
+        }
+      
+        .home-sub-text {
+          font-size: 15px;
+          text-align: center;
+        }
+      
+        .home-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 10px;
+          text-align: center;
+          
+        }
+      
+        .home-button a {
+          width: 145px; /* Задаємо однакову ширину для обох кнопок */
+          height: 35px; /* Задаємо однакову висоту для обох кнопок */
+          margin: 0 5px;
+          font-size: 12px;
+          border-radius: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+        }
+      }
+
+      
+    @media (max-width: 350px) {
+        .home-main-container {
+          letter-spacing: 2px;
+          width: 100%;
+          height: 75vh;
+          margin-top: 50px;
+        }
+      
+        .company-home-title,
+        .company-home-title2 {
+          font-size: 28px;
+          text-align: center;
+        }
+      
+        .home-sub-text {
+          font-size: 15px;
+          text-align: center;
+        }
+      
+        .home-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 10px;
+          text-align: center;
+          
+        }
+      
+        .home-button a {
+          width: 145px; /* Задаємо однакову ширину для обох кнопок */
+          height: 35px; /* Задаємо однакову висоту для обох кнопок */
+          margin: 0 5px;
+          font-size: 12px;
+          border-radius: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+        }
+      }
+
+      
+        
+    
+    
+
+
+
+
+
 h1{
     position: relative;
 }

@@ -127,6 +127,56 @@
         letter-spacing: -0.2px;
     }
 }
+
+@media (max-width:368px) {
+    .about-main-text{ 
+        font-size: 30px;
+        position: relative;
+        color: #0b0757;
+        text-align: center !important; 
+    }
+    .about-main-text::before{
+        width: 100px;
+        height: 3px; 
+    }
+
+    .about-main-text2{ 
+        font-size: 30px;
+        position: center;
+        color: #0b0757;
+        text-align: center !important; 
+    }
+    .about-main-text2::before{
+        width: 100px;
+        height: 3px; 
+        bottom: -8px; /* Зсуваємо лінію вгору на 8px (половина висоти) */
+        left: 50%; /* Вирівнюємо по горизонталі відносно тексту */
+        transform: translateX(-50%); /* Зсуваємо лінію на половину її ширини вліво */
+    }
+
+    .about-shadow{
+        box-shadow: none;
+        border-radius: 5px;
+        margin-top: 0px !important;
+    }
+    .about-main-container{
+        margin-top: 70px !important;
+    }
+    .our-values-container{
+        margin-top: 50px;
+    }
+    .about-shadow:hover{
+        border-top: 5px solid #0b0757;
+        border-bottom: 5px solid white;
+    }
+    .paragraphs{
+        text-align: center !important;
+        word-break: break-word;
+        letter-spacing: -0.2px;
+    }
+}
+
+
 @media (max-width:325px) {
     .about-main-text{ 
         font-size: 23px;

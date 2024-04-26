@@ -73,18 +73,24 @@ function Home() {
             <p className='mt-3 home-sub-text'>{txt}</p>
           </div>
           <div className='mt-4 container home-button'>
-            <Link className='explore-link' to='/about'>
+            <Link className='explore-link' to='/about' style={{
+                   letterSpacing: '1px',
+                borderRadius: '0px',
+                 padding: '6px 12px',
+                 fontsize: '4px', 
+                //  marginTop: '-3px',
+              }}>
               Дізнайтесь більше
             </Link>
             <Link
-              className='btn btn-outline-primary mx-1 text-light home-button'
+              className=' btn btn-outline-primary mx-1 text-light home-button'
               to='/contact'
               style={{
-                letterSpacing: '1px',
+                   // letterSpacing: '1px',
                 borderRadius: '0px',
-                padding: '5px 12px',
-                fontSize: '1rem',
-                marginTop: '-3px',
+                 padding: '6px 12px',
+                //  fontsize: '4px', 
+                //  marginTop: '-3px',
               }}
             >
                Зв'яжіться з нами

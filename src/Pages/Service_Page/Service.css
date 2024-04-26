@@ -99,3 +99,36 @@
         opacity: 1;
       }
 }
+
+@media (max-width:368px) {
+    .comprehensive-service-text{
+        display: none;
+        
+    }
+    .comprehensive-service-box{
+        margin-top: 50px;
+    }
+    .service-main-box{
+        margin-top: 70px;
+        overflow: hidden;
+    }
+    .manufacturing-container{
+        justify-content: center !important;
+    }
+    .overlay {
+        opacity: 1;
+      }
+
+      .service-main-text{
+         
+        position: relative;
+        font-size: 20px; 
+        font-weight: bold; /* Make the font bold */
+      }
+
+      .estimation-costing-sub-title{
+        font-size: 18px;
+        color: #0b0757;
+         
+    }
+}
