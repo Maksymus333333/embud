@@ -89,6 +89,38 @@
     }
     
 }
+
+@media (max-width:368px) {
+    .projects-main-text{
+        font-size: 25px;
+        position: relative;
+        color: #0b0757;
+    }
+    .projectDetailsBox{
+        margin-top: 90px;
+      }
+    .projects-main-text::before{
+        content: '';
+        width: 160px;
+        height: 5px;
+        position: absolute; 
+        background: linear-gradient(99deg, #5338FF 0%, #FFC465 100%);
+        border-radius: 5px;
+        bottom: -8px; /* Зсуваємо лінію вгору на 8px (половина висоти) */
+        left: 50%; /* Вирівнюємо по горизонталі відносно тексту */
+        transform: translateX(-50%); /* Зсуваємо лінію на половину її ширини вліво */
+    }
+    .project-main-container{
+        margin-top: 70px;
+    }
+    .projects-sub-text{
+        font-size: 20px !important;
+        font-weight:600;
+        color: #0b0757;
+    }
+    
+}
+
 @media (max-width:325px) {
     .projects-sub-text{
         font-size: 19px !important;

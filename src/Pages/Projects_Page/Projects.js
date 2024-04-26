@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Projects_Page/Projects.css';
+import './Projects.css';
 import ProjectData from './ProjectData';
 
 const Projects = () => {

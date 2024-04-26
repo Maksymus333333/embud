@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
-import '../Home_Page/Home.css';
+import './Home.css';
 import { FaLeaf, FaTrophy, FaLightbulb } from 'react-icons/fa';
 import { RxArrowTopRight } from 'react-icons/rx';
 import { HashLink as Link } from 'react-router-hash-link';
-import img1 from '..//..//assets/serv_home.jpg';
-import img2 from '..//..//assets/kalk.jpg';
-import img3 from '..//..//assets/turnkey.jpg';
-import jsw from '..//..//assets/1+1.png';
-import SK from '..//..//assets/kovalska.png';
-import ct from '..//..//assets/city.jpg';
-import logo from '..//..//assets/round.jpg';
-import TMT from '..//..//assets/Business.png';
-import ts from '..//..//assets/kan.jpg';
-import kw from '..//..//assets/kiywst.png';
-import med from '..//..//assets/med.png';
-import sg from '..//..//assets/sg.png';
-import ak from '..//..//assets/ak.png';
-//import ManufacturingMaterials from '..//..//Components/Manufacturing/Manufacturing';
-//import ConstructionMaterials from '..//..//Components/ConstructionMaterials/ConstructionMaterials';
+import img1 from '../../assets/serv_home.jpg';
+import img2 from '../../assets/kalk.jpg';
+import img3 from '../../assets/key_ph.jpg';
+import jsw from '../../assets/1+1.png';
+import SK from '../../assets/kovalska.png';
+import ct from '../../assets/city.jpg';
+import logo from '../../assets/embud_logo.png';
+import TMT from '../../assets/Business.png';
+import ts from '../../assets/kan.jpg';
+import kw from '../../assets/kiywst.png';
+import med from '../../assets/med.png';
+import sg from '../../assets/sg.png';
+import ak from '../../assets/ak.png';
+ 
 
 const data = [
   {
     id: 1,
-    title: 'Весь комплекс електромонтажних робіт',
+    title: 'Весь комплекс',
+    title2: 'електромонтажних робіт',
     txt: 'Проектування ваших мрій, де уява зустрічається з архітектурою',
     img: `${img1}`,
     tt: '',
@@ -59,31 +59,38 @@ const data = [
 
 function Home() {
   const [index] = useState(0);
-  const { id, title, txt } = data[index];
+  const { id, title, title2, txt } = data[index];
   return (
     <div
       className='home-head-component position-relative container-fluid px-0  my-4'
       style={{ overflow: 'hidden' }}
     >
-      <div className='home-main-container'>
+      <div className='home-main-container '>
         <div className='img-overlay text-center'>
           <div className='text-container container' key={id}>
             <h1 className='company-home-title'>{title}</h1>
+            <h1 className='company-home-title2'>{title2}</h1>
             <p className='mt-3 home-sub-text'>{txt}</p>
           </div>
           <div className='mt-4 container home-button'>
-            <Link className='explore-link' to='/about'>
+            <Link className='explore-link' to='/about' style={{
+                   letterSpacing: '1px',
+                borderRadius: '0px',
+                 padding: '6px 12px',
+                 fontsize: '4px', 
+                //  marginTop: '-3px',
+              }}>
               Дізнайтесь більше
             </Link>
             <Link
-              className='btn btn-outline-primary mx-3 text-light'
+              className=' btn btn-outline-primary mx-1 text-light home-button'
               to='/contact'
               style={{
-                letterSpacing: '1px',
+                   // letterSpacing: '1px',
                 borderRadius: '0px',
-                padding: '5px 12px',
-                fontSize: '1rem',
-                marginTop: '-3px',
+                 padding: '6px 12px',
+                //  fontsize: '4px', 
+                //  marginTop: '-3px',
               }}
             >
                Зв'яжіться з нами
@@ -94,7 +101,7 @@ function Home() {
       <div className='container my-5'>
         <div className=''>
           <h3 className='text-center main-text'>
-          Будуємо своє бачення, цеглинка за цеглинкою
+          Будуємо ваші мрії
           </h3>
         </div>
       </div>
@@ -116,8 +123,8 @@ function Home() {
       <FaLeaf className='container-icons' />
       <h3 className='mt-3'>Сталий розвиток</h3>
       <p style={{ color: 'gray' }}>
-        Наша робота ґрунтується на принципах сталого розвитку.
-        Ми бачимо екологічно чисте майбутнє з відповідальним будівництвом та ефективним виробництвом для більш зеленого світу     
+      Наша робота ґрунтується на принципах сталого розвитку.
+       Ми бачимо екологічно чисте майбутнє з відповідальним будівництвом та ефективним виробництвом.    
       </p>
     </div>
     <div className='container-box col-lg-3 col-md-5 col-12 p-5 mt-lg-0 mt-md-5 mt-1'>
@@ -142,7 +149,7 @@ function Home() {
             Нам довіряють відомі компанії
           </h3>
           <p className='sub-text mt-5 text-center'>
-            Ми пишаємося нашим прагненням надавати виняткові послуги
+            Ми пишаємося нашим прагненням надавати виняткові послуги,
             які відповідають високим стандартам лідерів галузі. 
           </p>
         </div>
@@ -191,7 +198,7 @@ function Home() {
             className='row d-flex justify-content-center align-items-center mt-5 p-sm-5 p-0'
             style={{ backgroundColor: '#FAF7F0' }}
           >
-            <div className='col-lg-6 col-12 p-0'>
+            <div className='col-lg-5 col-12 p-0'>
               <img
                 loading='lazy'
                 className='img-fluid service-img'
@@ -235,7 +242,7 @@ function Home() {
               Отримати більше <RxArrowTopRight />
               </Link>
             </div>
-            <div className='col-lg-6 col-12 p-0 order-lg-1 order-0'>
+            <div className='col-lg-5 col-12 p-0 order-lg-1 order-0'>
               <img
                 loading='lazy'
                 className='img-fluid service-img'
@@ -248,7 +255,7 @@ function Home() {
             className='row d-flex justify-content-center align-items-center mt-5 p-sm-5 p-0'
             style={{ backgroundColor: '#F9F5F6' }}
           >
-            <div className='col-lg-6 col-12 p-0'>
+            <div className='col-lg-5 col-12 p-0'>
               <img
                 loading='lazy'
                 src={img3}
@@ -263,8 +270,7 @@ function Home() {
             >
               <h3 className='service-main-text'>Проекти під ключ</h3>
               <p>
-              Станьте свідком того, як проект вашої мрії реалізується без зайвих зусиль завдяки нашим рішенням "під ключ".
-                рішеннями під ключ. Від концепції до реалізації, ми займаємося проектуванням,
+              Станьте свідком того, як проект вашої мрії реалізується без зайвих зусиль завдяки нашим рішенням "під ключ". Від концепції до реалізації, ми займаємося проектуванням,
                 будівництвом та іншим, забезпечуючи бездоганний досвід та
                 виняткові результати.
                 

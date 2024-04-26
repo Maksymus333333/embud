@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '..//..//assets/logotest.jpg';
-import LogoRound from '..//..//assets/round.jpg';
+import Logo from '../../assets/embud_logoV2.jpg';
+import LogoRound from '../../assets/embud_logo.png';
 
-import '../Navbar/Navbar.css';
+import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavbarContainer = styled.section``;
@@ -87,8 +87,8 @@ function Navbar() {
                   src={Logo}
                   className='mx-sm-2 mx-1 logo'
                   style={{
-                    width: `${scroll ? '60px' : '95px'}`,
-                    height: `${scroll ? '60px' : '95px'}`,
+                    width: `${scroll ? '60px' : '80px'}`,
+                    height: `${scroll ? '60px' : '80px'}`,
                     transition: 'width 0.5s ease, height 0.5s ease',
                   }}
                   alt='logo'
@@ -99,7 +99,7 @@ function Navbar() {
             <span
               className='company-text px-sm-2 px-0'
               style={{
-                fontSize: `${scroll ? '16px' : '20px'}`,
+                fontSize: `${scroll ? '15px' : '20px'}`,
                 transition: 'width 0.5s ease, height 0.5s ease',
               }}
             >

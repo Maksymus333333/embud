@@ -1,15 +1,11 @@
-import Road1 from '..//..//assets/warszawa1.jpg';
-// import Road2 from '..//..//assets/road-2.jpg';
-// import Road3 from '..//..//assets/road-3.jpg';
-// import Road4 from '..//..//assets/road-4.jpg';
+import Road1 from '../../assets/warszawa1.jpg';
+ 
 
-import wareHouse1 from '..//..//assets/tetris.jpg';
-// import wareHouse2 from '..//..//assets/warehouse2.jpg';
-// import wareHouse3 from '..//..//assets/warehouse3.jpg';
-// import wareHouse4 from '..//..//assets/warehouse4.jpg';
+import wareHouse1 from '../../assets/tetris.jpg';
+ 
 
 
-import torcen1 from '..//..//assets/torcen1.jpg';
+import torcen1 from '../../assets/torcen1.jpg';
 
 const projectsData = [
   {

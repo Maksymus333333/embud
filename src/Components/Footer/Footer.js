@@ -14,8 +14,8 @@ import { AiOutlineArrowUp } from 'react-icons/ai';
 import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import Logo from '../../assets/logotest.jpg';
-import '../Footer/Footer.css';
+import Logo from '../../assets/embud_logo.png';
+import './Footer.css';
 
 function Footer() {
   const location = useLocation();
@@ -214,7 +214,7 @@ function Footer() {
               <div className='mt-2'>
                 <FaMapMarkerAlt className='reach-us-icons' />
                 <p className='mx-sm-0 fs-6  mt-3 ' style={{ opacity: '1' }}>
-                Опис, де знаходиться фірма ....
+                04080, м. Київ, вул. Кирилівська, будинок 82
                 </p>
               </div>
               <div className=' d-sm-flex flex-row justify-content-left mt-2'>
@@ -223,11 +223,11 @@ function Footer() {
                   <p className=' mt-sm-0 mt-2' style={{ opacity: '1' }}>
                     <Link
                       className='footer-link'
-                      to='mailto:EMBUD@gmail.com'
+                      to='mailto: office@embud.com.ua'
                       title='Drop an Email'
                       style={{ fontSize: '10px' }}
                     >
-                      EMBUD@gmail.com
+                       office@embud.com.ua
                     </Link>
                   </p>
                 </div>
@@ -237,12 +237,12 @@ function Footer() {
                   <FaPhoneAlt className='reach-us-icons' />
                   <p style={{ opacity: '1' }}>
                     <Link
-                      to='tel:+************'
+                      to='tel:044-228-22-58'
                       className='footer-link mt-2'
                       title='Call Us'
                       style={{ fontSize: '13px' }}
                     >
-                      +************
+                      044-228-22-58
                     </Link>
                   </p>
                 </div>
